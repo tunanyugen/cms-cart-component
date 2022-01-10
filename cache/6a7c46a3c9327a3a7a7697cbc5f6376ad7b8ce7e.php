@@ -4,4 +4,4 @@
     
     <!-- Write your code here -->
 </div>
-<script src="/main.js"></script>
+<script src="/main.js"></script><?php /**PATH /home/tuna/Projects/components/cart/src/index.blade.php ENDPATH**/ ?>

@@ -1,6 +1,134 @@
-h1 {
-    width: max-content;
-    background: linear-gradient(90deg, rgba(237,102,102,1) 0%, rgba(161,164,94,1) 33%, rgba(136,123,141,1) 56%, rgba(192,87,102,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "@tunanyugen/react-components/src/index.scss";
+
+.c8498c042709011ec90d60242ac120003{
+    $backgroundColor: #f4f4f4;
+    $contentColor: white;
+    $spacing: 8px;
+    $borderRadius: 4px;
+
+    display: flex;
+    padding: 40px 0px;
+    background-color: $backgroundColor;
+    .container {
+        display: flex;
+        @media only screen and (max-width: 992px){
+            flex-direction: column;
+        }
+    }
+    .left {
+        flex: 0 0 58.33%;
+        @media only screen and (max-width: 992px){
+            width: 100%;
+            flex: 1;
+        }
+    }
+    .right {
+        flex: 1;
+        margin-left: $spacing;
+        background-color: $contentColor;
+        padding: $spacing;
+        border-radius: $borderRadius;
+    }
+    .toolbar {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: $spacing;
+        background-color: $contentColor;
+        border-radius: $borderRadius;
+        &__select-all{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            &__checkbox{
+                width: auto;
+                margin-right: $spacing;
+            }
+            &__text{
+                margin: 0;
+            }
+        }
+        &__delete{
+            margin-left: auto;
+        }
+    }
+    .cart {
+        width: 100%;
+        margin-top: $spacing;
+    }
+    .location {
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $backgroundColor;
+    }
+    .summary {
+        width: 100%;
+        tbody > tr > td:nth-child(2){
+            text-align: end;
+        }
+        &__confirm{
+            width: 100%;
+            height: 40px;
+        }
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        padding: $spacing;
+        border-radius: $borderRadius;
+        overflow: hidden;
+        background-color: $contentColor;
+        & + .item{
+            margin-top: $spacing;
+        }
+        &__section + .item__section{
+            & {
+                margin-left: $spacing;
+            }
+        }
+        &__select {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & .react-component__checkbox{
+                justify-content: flex-end;
+            }
+        }
+        $thumbnailWidth: 80px;
+        &__thumbnail{
+            flex: 0 0 80px;
+            height: 80px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__name{
+            flex: 1;
+        }
+        &__price{
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        &__quantity{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex: 1;
+            margin-left: auto;
+            &__display{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }
