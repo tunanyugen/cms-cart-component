@@ -1,4 +1,3 @@
-import "./index.scss";
 import "@fortawesome/fontawesome-free/js/all";
 import "bootstrap/dist/js/bootstrap.bundle";
 import * as React from 'react';
@@ -9,7 +8,7 @@ import Input from "@tunanyugen/react-components/src/ts/Form/Input/Input";
 import axios from "axios";
 import CartManager from "@tunanyugen/cookies/src/Cart";
 
-const id = "c8498c042709011ec90d60242ac120003";
+const uuid = "c8a0a6cc126e64de1ac1ab8e8ee341091";
 
 interface ComponentProps { }
  
@@ -321,5 +320,5 @@ class Summary extends React.Component<SummaryProps, SummaryState> {
 //#endregion
 ReactDOM.render(
     <Component />,
-    document.getElementById(id)
+    document.getElementById(uuid)
 )

@@ -5283,36 +5283,36 @@ readers do not read off random characters that represent icons */
   box-sizing: border-box;
 }
 
-.c8498c042709011ec90d60242ac120003 {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 {
   display: flex;
   padding: 40px 0px;
   background-color: #f4f4f4;
 }
-.c8498c042709011ec90d60242ac120003 .container {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .container {
   display: flex;
 }
 @media only screen and (max-width: 992px) {
-  .c8498c042709011ec90d60242ac120003 .container {
+  .c8a0a6cc126e64de1ac1ab8e8ee341091 .container {
     flex-direction: column;
   }
 }
-.c8498c042709011ec90d60242ac120003 .left {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .left {
   flex: 0 0 58.33%;
 }
 @media only screen and (max-width: 992px) {
-  .c8498c042709011ec90d60242ac120003 .left {
+  .c8a0a6cc126e64de1ac1ab8e8ee341091 .left {
     width: 100%;
     flex: 1;
   }
 }
-.c8498c042709011ec90d60242ac120003 .right {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .right {
   flex: 1;
   margin-left: 8px;
   background-color: white;
   padding: 8px;
   border-radius: 4px;
 }
-.c8498c042709011ec90d60242ac120003 .toolbar {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .toolbar {
   display: flex;
   align-items: center;
   height: 40px;
@@ -5320,43 +5320,43 @@ readers do not read off random characters that represent icons */
   background-color: white;
   border-radius: 4px;
 }
-.c8498c042709011ec90d60242ac120003 .toolbar__select-all {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .toolbar__select-all {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-.c8498c042709011ec90d60242ac120003 .toolbar__select-all__checkbox {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .toolbar__select-all__checkbox {
   width: auto;
   margin-right: 8px;
 }
-.c8498c042709011ec90d60242ac120003 .toolbar__select-all__text {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .toolbar__select-all__text {
   margin: 0;
 }
-.c8498c042709011ec90d60242ac120003 .toolbar__delete {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .toolbar__delete {
   margin-left: auto;
 }
-.c8498c042709011ec90d60242ac120003 .cart {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .cart {
   width: 100%;
   margin-top: 8px;
 }
-.c8498c042709011ec90d60242ac120003 .location {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .location {
   display: flex;
   align-items: center;
   min-height: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid #f4f4f4;
 }
-.c8498c042709011ec90d60242ac120003 .summary {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .summary {
   width: 100%;
 }
-.c8498c042709011ec90d60242ac120003 .summary tbody > tr > td:nth-child(2) {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .summary tbody > tr > td:nth-child(2) {
   text-align: end;
 }
-.c8498c042709011ec90d60242ac120003 .summary__confirm {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .summary__confirm {
   width: 100%;
   height: 40px;
 }
-.c8498c042709011ec90d60242ac120003 .item {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item {
   display: flex;
   align-items: center;
   padding: 8px;
@@ -5364,46 +5364,46 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
   background-color: white;
 }
-.c8498c042709011ec90d60242ac120003 .item + .item {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item + .item {
   margin-top: 8px;
 }
-.c8498c042709011ec90d60242ac120003 .item__section + .item__section {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__section + .item__section {
   margin-left: 8px;
 }
-.c8498c042709011ec90d60242ac120003 .item__select {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__select {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.c8498c042709011ec90d60242ac120003 .item__select .react-component__checkbox {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__select .react-component__checkbox {
   justify-content: flex-end;
 }
-.c8498c042709011ec90d60242ac120003 .item__thumbnail {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__thumbnail {
   flex: 0 0 80px;
   height: 80px;
 }
-.c8498c042709011ec90d60242ac120003 .item__thumbnail img {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__thumbnail img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.c8498c042709011ec90d60242ac120003 .item__name {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__name {
   flex: 1;
 }
-.c8498c042709011ec90d60242ac120003 .item__price {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__price {
   display: flex;
   align-items: center;
   flex: 1;
 }
-.c8498c042709011ec90d60242ac120003 .item__quantity {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__quantity {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex: 1;
   margin-left: auto;
 }
-.c8498c042709011ec90d60242ac120003 .item__quantity__display {
+.c8a0a6cc126e64de1ac1ab8e8ee341091 .item__quantity__display {
   display: flex;
   align-items: center;
   justify-content: center;

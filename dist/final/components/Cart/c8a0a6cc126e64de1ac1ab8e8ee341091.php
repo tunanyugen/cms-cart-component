@@ -1,15 +1,15 @@
 <?php
 
-namespace Components\Navbar\c35e8fe565d4611ecbf630242ac130002;
+namespace Components\Cart\c8a0a6cc126e64de1ac1ab8e8ee341091;
 
 use App\Utilities\ExtendedComponent;
 
-class c35e8fe565d4611ecbf630242ac130002 extends ExtendedComponent
+class c8a0a6cc126e64de1ac1ab8e8ee341091 extends ExtendedComponent
 {
-    protected string $uuid = "c35e8fe565d4611ecbf630242ac130002";
-    protected string $type = "Navbar";
-    protected string $name = "Navbar";
-    protected string $description = "Navigation bar on top of page";
+    protected string $uuid = "c8a0a6cc126e64de1ac1ab8e8ee341091";
+    protected string $type = "Cart";
+    protected string $name = "Cart";
+    protected string $description = "Cart section before checking out";
     // variables used in pug template
     protected array $variables = [
         
