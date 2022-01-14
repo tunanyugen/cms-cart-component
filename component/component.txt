@@ -1,15 +1,16 @@
 <?php
 
-namespace Components\process.env.TYPE\process.env.UUID;
+namespace Components\process.env.COMPONENT_TYPE\process.env.GROUP_ID\process.env.COMPONENT_NAME;
 
 use App\Utilities\ExtendedComponent;
 
 class process.env.UUID extends ExtendedComponent
 {
     protected string $uuid = "process.env.UUID";
-    protected string $type = "process.env.TYPE";
+    protected string $group_id = "process.env.GROUP_ID";
+    protected string $type = "process.env.COMPONENT_TYPE";
     protected string $name = "process.env.COMPONENT_NAME";
-    protected string $description = "process.env.DESCRIPTION";
+    protected string $description = "process.env.COMPONENT_DESCRIPTION";
     // variables used in pug template
     protected array $variables = [
         
@@ -45,6 +46,6 @@ class process.env.UUID extends ExtendedComponent
      */
     public function render()
     {
-        return view("$this->type.$this->uuid.$this->uuid");
+        return view("$this->type.$this->group_id.$this->name.$this->uuid");
     }
 }

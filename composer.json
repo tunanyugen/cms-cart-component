@@ -11,7 +11,8 @@
 	"require": {
 		"php": ">=7.1",
 		"pecee/simple-router": "^4.0",
- 	 	"jenssegers/blade": "^1.4"
+ 	 	"jenssegers/blade": "^1.4",
+		"larapack/dd": "^1.1"
 	},
 	"config": {
 		"preferred-install": "dist"

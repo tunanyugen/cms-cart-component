@@ -1,0 +1,1 @@
+<h1>This is how you create a view controller</h1><?php /**PATH /home/tuna/Projects/components/cart/sample/index.blade.php ENDPATH**/ ?>

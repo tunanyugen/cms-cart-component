@@ -1,15 +1,16 @@
 <?php
 
-namespace Components\Cart\c8a0a6cc126e64de1ac1ab8e8ee341091;
+namespace Components\Cart\c34fd9742dc6b4e27b6fb9b05ac235dfd\Cart;
 
 use App\Utilities\ExtendedComponent;
 
-class c8a0a6cc126e64de1ac1ab8e8ee341091 extends ExtendedComponent
+class c0591ee5716bd4334963eeb0c7fef6fe7 extends ExtendedComponent
 {
-    protected string $uuid = "c8a0a6cc126e64de1ac1ab8e8ee341091";
+    protected string $uuid = "c0591ee5716bd4334963eeb0c7fef6fe7";
+    protected string $group_id = "c34fd9742dc6b4e27b6fb9b05ac235dfd";
     protected string $type = "Cart";
     protected string $name = "Cart";
-    protected string $description = "Cart section before checking out";
+    protected string $description = "Cart section";
     // variables used in pug template
     protected array $variables = [
         
@@ -45,6 +46,6 @@ class c8a0a6cc126e64de1ac1ab8e8ee341091 extends ExtendedComponent
      */
     public function render()
     {
-        return view("$this->type.$this->uuid.$this->uuid");
+        return view("$this->type.$this->group_id.$this->name.$this->uuid");
     }
 }

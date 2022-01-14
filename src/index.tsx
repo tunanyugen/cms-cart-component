@@ -8,9 +8,8 @@ import Checkbox from "@tunanyugen/react-components/src/ts/Form/Checkbox/Checkbox
 import Input from "@tunanyugen/react-components/src/ts/Form/Input/Input";
 import axios from "axios";
 import CartManager from "@tunanyugen/cookies/src/Cart";
-
-const uuid = "c8a0a6cc126e64de1ac1ab8e8ee341091";
-
+// Write your code here
+const uuid = "c0591ee5716bd4334963eeb0c7fef6fe7";
 interface ComponentProps { }
  
 interface ComponentState {
@@ -27,24 +26,20 @@ class Component extends React.Component<ComponentProps, ComponentState> {
         }
     }
     componentDidMount(): void {
-        CartManager.addItem(1, 1);
-        CartManager.addItem(2, 1);
-        CartManager.addItem(3, 2);
         let cart = CartManager.get();
         let query = "";
         cart.forEach((quantity, id) => {
             query += `&ids[]=${id}`;
         });
-        axios.get(`/api/products?${query}`).then((res) => {
+        axios.get(`/api/admin/products?${query}`).then((res) => {
             let items:ItemProps[] = [];
-            console.log(res.data)
             if (res.data.items){
                 items = res.data.items.map((item) => {
                     return {
                         id: item.id,
                         name: item.name,
                         price: item.price,
-                        quantity: 1,
+                        quantity: cart.get(item.id),
                         selected: false,
                         thumbnail: item.banner,
                     }
@@ -90,6 +85,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
         let items:ItemProps[] = [];
         this.state.items.forEach((item) => {
             if (!item.selected){ items.push(item) }
+            else { CartManager.removeItem(item.id) }
         })
         this.setState({items});
     }
@@ -103,6 +99,7 @@ class Component extends React.Component<ComponentProps, ComponentState> {
     setQuantity = (index:number, value:number) => {
         let items = [...this.state.items];
         items[index].quantity = value >= 0 ? value : 0;
+        CartManager.setQuantity(items[index].id, value);
         this.setState({items});
     }
     setLocation = (value:string) => {
@@ -323,3 +320,4 @@ ReactDOM.render(
     <Component />,
     document.getElementById(uuid)
 )
+// Write your code here

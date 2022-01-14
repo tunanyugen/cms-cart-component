@@ -26,7 +26,8 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "setup": "composer install && npm install && node uuid-generator.js",
+    "setup": "composer install && npm install && node setup.js",
+    "make-component": "node make-component.js",
     "dev": "concurrently \"php -S localhost:8000 public_html/index.php\" \"npm run watch\""
   },
   "dependencies": {
